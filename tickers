@@ -1,0 +1,20 @@
+| ETF  |   % |
+| ---- | --: |
+| VWRA | 55% |
+| AGGU | 10% |
+| ZPRV | 15% |
+| FUSD | 10% |
+| EIMI |  5% |
+| SMGB |  5% |
+
+
+OrderedDict({'AGGU.L': 0.0, 'EIMI.L': 0.0, 'FUSD.L': 0.6298964501759435, 'SMGB.L': 0.3701035498240564, 'VWRA.L': 0.0, 'ZPRV.DE': 0.0})
+Expected annual return: 17.3%
+Annual volatility: 15.9%
+Sharpe Ratio: 0.82
+
+OrderedDict({'AGGU.L': 0.1, 'EIMI.L': 0.05, 'FUSD.L': 0.05, 'SMGB.L': 0.3, 'VWRA.L': 0.45, 'ZPRV.DE': 0.05})
+Expected annual return: 14.0%
+Annual volatility: 14.5%
+Sharpe Ratio: 0.71
+
