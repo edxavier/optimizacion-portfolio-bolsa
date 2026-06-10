@@ -3,24 +3,25 @@
 ## Stack
 
 - **Python 3.13** (`.python-version`) managed via **uv** — do not use pip/pipenv/poetry.
-- No dependencies yet. `pyproject.toml` is the single source of truth.
+- Dependencies in `pyproject.toml`: **yfinance**, **pandas**, **matplotlib**, **ipykernel**
+- Single entrypoint: `main.py` exports `main()`.
 
 ## Commands
 
 ```bash
-uv run main.py          # run the app
+uv run main.py          # run the app (genera precios_mensuales.csv)
 uv add <package>        # add a dependency
+uv remove <package>     # remove a dependency
 uv sync                 # sync .venv with lockfile
-python main.py          # also works if .venv is active
 ```
 
 ## Project state
 
-- **No commits yet** — main branch is empty history.
+- **Committed and pushed** to `origin/main` (GitHub).
 - **No tests, no lint/formatter/typecheck config** — not yet wired.
-- **Single entrypoint**: `main.py` exports `main()`.
+- `main.py` descarga precios mensuales de ETFs vía `yfinance` y los guarda en CSV.
 
 ## Conventions
 
 - `uv.lock` is committed — keep it in sync after any dependency change.
-- `.venv/` is gitignored; recreate with `uv sync`.
+- `.venv/` and `.idea/` are gitignored; recreate venv with `uv sync`.
